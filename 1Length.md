@@ -5,7 +5,8 @@ Tweets table:
 +----------+----------------------------------+
 | tweet_id | content                          |
 +----------+----------------------------------+
-| 1        | Vote for Shiva                   |
+| 1        | Vote for Shiva        
+|
 | 2        | Let us make America great again! |
 +----------+----------------------------------+
 Output: 
@@ -16,15 +17,18 @@ Output:
 +----------+
 Explanation: 
 Tweet 1 has length = 14. It is a valid tweet.
+
 Tweet 2 has length = 32. It is an invalid tweet.
 
 
 **MySQL**
 
 select tweet_id from tweets
+
 where **length**(content) > 15
 
 **MS SQL**
 
 Select tweet_id from tweets
+
 where **len**(content)  > 15
